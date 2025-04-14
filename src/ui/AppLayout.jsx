@@ -1,9 +1,9 @@
-import { Outlet, useNavigation } from "react-router";
+import { Outlet, useNavigation } from 'react-router';
 
-import Header from "./Header";
-import Loader from "./Loader";
-import CartOverview from "../features/cart/CartOverview";
-import { NAVIGATION_STATE } from "../utils/constants";
+import Header from './Header';
+import Loader from './Loader';
+import CartOverview from '../features/cart/CartOverview';
+import { NAVIGATION_STATE } from '../utils/constants';
 
 function AppLayout() {
   const navigation = useNavigation();
@@ -11,6 +11,7 @@ function AppLayout() {
   console.log(navigation);
 
   return (
+    // <div>
     <div className="layout">
       {isLoading && <Loader />}
       <Header />
