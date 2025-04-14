@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useState } from 'react';
+import { useNavigate } from 'react-router';
 
 function SearchOrder() {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
   const navigate = useNavigate();
 
   function handleQueryChange(evt) {
@@ -14,7 +14,7 @@ function SearchOrder() {
     if (!query) return;
 
     navigate(`/order/${query}`);
-    setQuery(() => "");
+    setQuery(() => '');
   }
 
   return (
