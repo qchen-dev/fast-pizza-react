@@ -5,9 +5,8 @@ import Error from './ui/Error';
 import Menu from './features/menu/Menu';
 import { loader as menuLoader } from './features/menu/loader';
 import Cart from './features/cart/Cart';
-import CreateOrder, {
-  action as createOrderAction,
-} from './features/order/action';
+import CreateOrder from './features/order/CreateOrder';
+import { action as createOrderAction } from './features/order/action';
 import Order from './features/order/Order';
 import { loader as orderLoader } from './features/order/loader';
 import AppLayout from './ui/AppLayout';
