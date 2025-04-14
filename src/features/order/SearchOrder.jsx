@@ -24,6 +24,7 @@ function SearchOrder() {
         value={query}
         onChange={handleQueryChange}
         type="text"
+        className="w-32 rounded-full bg-yellow-100 px-5 py-2 text-sm transition-all duration-300 placeholder:text-stone-400 focus:ring-3 focus:ring-yellow-500 focus:outline-hidden sm:w-64 sm:focus:w-72"
       />
     </form>
   );

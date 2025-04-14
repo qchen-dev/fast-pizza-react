@@ -8,18 +8,18 @@ import { NAVIGATION_STATE } from '../utils/constants';
 function AppLayout() {
   const navigation = useNavigation();
   const isLoading = navigation.state === NAVIGATION_STATE.LOADING;
-  console.log(navigation);
+  // console.log(navigation);
 
   return (
-    // <div>
-    <div className="layout">
+    <div className="grid h-screen grid-rows-[auto_1fr_auto]">
       {isLoading && <Loader />}
       <Header />
 
-      <main>
-        <h1>AppLayout Content</h1>
-        <Outlet />
-      </main>
+      <div className="overflow-scroll bg-orange-100 p-15 text-center">
+        <main className="mx-auto max-w-3xl">
+          <Outlet />
+        </main>
+      </div>
 
       <CartOverview />
     </div>
